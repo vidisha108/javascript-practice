@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <div id="box">
-        <h2 id="quebox">question</h2>
-        <div class="row">
-            <input class="options" id="option1" type="radio" value="a" name="option"/>
-            <label  for=""> option</label>
-        </div>
-        <div class="row">
-            <input class="options" id="option2" type="radio" value="b" name="option"/>
-            <label  for=""> option</label>
-        </div>
-        <div class="row">
-            <input class="options" id="option3" type="radio" value="c" name="option"/>
-            <label  for=""> option</label>
-        </div>
-        <div class="row"> 
-            <input class="options" id="option4" type="radio" value="d" name="option"/>
-            <label  for=""> option</label>
-        </div>
-         <button class="btn" onclick="submitquiz()">button</button>
-        </div>
-         
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <input id="display" readonly>
+      <div id="keys">
+      <button onclick="appendtodisplay('+')" class="operator-btn">+</button>
+      <button onclick="appendtodisplay('7')">7</button>
+      <button onclick="appendtodisplay('8')">8</button>
+      <button onclick="appendtodisplay('9')">9</button>
+      <button onclick="appendtodisplay('-')" class="operator-btn">-</button>
+      <button onclick="appendtodisplay('4')">4</button>
+      <button onclick="appendtodisplay('5')">5</button>
+      <button onclick="appendtodisplay('6')">6</button>
+      <button onclick="appendtodisplay('*')" class="operator-btn">*</button>
+      <button onclick="appendtodisplay('1')">1</button>
+      <button onclick="appendtodisplay('2')">2</button>
+      <button onclick="appendtodisplay('3')">3</button>
+      <button onclick="appendtodisplay('/')" class="operator-btn">/</button>
+      <button onclick="appendtodisplay('0')">0</button>
+      <button onclick="appendtodisplay('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="cleardisplay()" class="operator-btn">C</button>
     </div>
     </div>
-    <script src="app.js"></script>
-</body>
+    <script src="script.js"> </script>
+  </body>
 </html>
